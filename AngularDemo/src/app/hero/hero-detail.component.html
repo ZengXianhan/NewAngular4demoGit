@@ -1,0 +1,10 @@
+<div *ngIf="hero">
+  <h2>{{hero.Name}} details!</h2>
+  <div>
+    <label>ID: </label>{{hero.ID}}</div>
+  <div>
+    <label>name: </label>
+    <input [(ngModel)]="hero.Name" placeholder="name" />
+  </div>
+  <button (click)="goBack()">Back</button>
+</div>
